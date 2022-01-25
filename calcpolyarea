@@ -1,0 +1,49 @@
+#calculate area of every polygon  (almost)
+#trapezoid :yamuk,
+# circum:çevre
+# oblong:dikdörtgen
+# polygon:çokgen
+import math
+from typing import Tuple
+
+ops=input("please insert your operation name [square] [circle] [oblong] [triangle] [rectangle] [pentagon] [trapezoid]")
+
+if ops=="triangle":
+    edge1=float(input("please insert edge1"))
+    edge2 = float(input("please insert edge2"))
+    edge3 = float(input("please insert edge3"))
+    s=(edge1+edge2+edge3)/2
+    res=(s*(s-edge1)*(s-edge2)*(s-edge3))**0.5
+    print('triangle area is %0.2f'%res)
+
+elif ops=="oblong":
+    edge1 = float(input("please insert  short edge "))
+    edge2 = float(input("please insert long edge "))
+    res =edge1*edge2
+    print("result= ",res)
+
+elif ops == "rectangle":
+    edge1 = float(input("please insert  short edge "))
+    edge2 = float(input("please insert long edge "))
+    res = edge1 * edge2
+    print("result= ", res)
+
+elif ops=="circle":
+    radius = float(input("please insert  radius "))
+    pi=3
+    res=pi*(radius*radius)
+    print("result= ",res)
+elif ops=="pentagon":
+    edge=float(input(" please insert one edge of pentagon"))
+    radius=float(input("please insert radius of pentagon"))
+    res=5*((edge*radius)/2)
+    print("result is ",res)
+elif ops == "trapezoid":
+    floorLenght = float(input("please insert  floor length "))
+    height = float(input("please insert height "))
+    res = floorLenght * height
+    print("result= ", res)
+elif ops == "square":
+    edge1 = float(input("please insert  one edge of square "))
+    res = edge1 **2
+    print("result = ", res)
