@@ -1,0 +1,33 @@
+import platform
+
+
+print("system ınfo is ="+platform.system())
+
+#PROCESSOR Info
+print("machine processor is= "+platform.processor())
+
+#GEN INFO
+print("Machine gen is= "+platform.release())
+
+#PYTHON VERS INFO
+print("machıne python vers is= "+platform.python_version())
+
+#ARCHITECTURE INFO
+print("machıne architecturee is =")
+print(platform.architecture())
+
+#Machıne ınfo
+print("machine is= "+platform.machine())
+
+#node ınfo
+print("machıne node ="+platform.node())
+
+#compile ınfo
+print("machıne compile is ="+platform.python_compiler())
+
+#add python vers
+print("gettin python vers is= ")
+print(platform.python_branch())
+
+#implementation ınfo
+print("machıne implmentation is ="+platform.python_implementation())
