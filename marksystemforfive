@@ -1,0 +1,16 @@
+puan =input("lütfen dersinizin puanaını girin")
+
+if(int(puan)>0 and int(puan)<25):
+     print(puan +" puanın 5'lik sistemde karşılığı: 0 dersi geçemediniz")
+elif(int(puan)>24 and int(puan)<45):
+    print(puan+" puanın 5lik sistemde karşılığı :1 dersi geçemediniz")
+elif(int(puan)>44 and int(puan)<55):
+    print(puan+" puanın 5lik sistemde karşılığı :2 dersi sorumlu geçtiniz")
+elif(int(puan)>54 and int(puan)<70):
+    print(puan+" puanın 5lik sistemdeki karşılığı:3 dersi geçtiniz ")
+elif(int(puan) > 69 and int(puan)<85):
+    print(puan + " puanın 5lik sistemdeki karşılığı:4 dersi geçtiniz ")
+elif(int(puan)>84 and int(puan)<101):
+    print(puan+" puanın 5lik sistemdeki karşılığı:5 dersi geçtiniz ")
+else :
+    print("lütfen geçerli bir puan giriniz")
