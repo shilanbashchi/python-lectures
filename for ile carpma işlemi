@@ -1,0 +1,13 @@
+#for ile çarpma işlemi yapma
+sayi1=int(input("lütfen sayı1 i gir "))
+sayi2=int(input("lütfen sayı2 yi gir "))
+
+sonuc=0
+
+for i in range(0,sayi1):
+    sonuc = sonuc +sayi2
+
+    print(sonuc)
+
+if sayi2==0 | sayi1==0:
+    print("lütfen 0 dan farklı bir sayı giriniz ")
