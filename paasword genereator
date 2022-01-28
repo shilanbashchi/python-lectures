@@ -1,0 +1,22 @@
+#password generator1
+import random
+
+Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789!@#$%^&*()"
+
+password_len = int(input("Şifre kaç karakterden oluşsun : "))
+password_count = int(input("Kaç adet şifre oluşturulsun : "))
+for x in range(0, password_count):
+    password = ""
+    for x in range(0, password_len):
+        password_char = random.choice(Chars)
+        password = password + password_char
+    print("Şifreniz : ", password)
+    
+
+#password generator 2
+    import string
+from random import *
+characters = string.ascii_letters + string.punctuation  + string.digits
+
+password =  "".join(choice(characters) for x in range(randint(8, 20)))
+print(password)
