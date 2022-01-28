@@ -1,0 +1,15 @@
+#doğum tarihinizden itibaren ne kadar süredir yaşadığınızı göreteren program 
+#as dati dediğimiz yerde datetim0e yazmmak yerine sadece dati yazıp kısaltma kullanacağız bu da işimizi kolaylaştıracak
+import datetime as dati
+dogum=input("doğum tarihinizi giriniz: (Gün.Ay.Yıl) ")
+dogum=dati.datetime.strptime(dogum,"%d.%m.%Y")
+simdi=dati.datetime.now()
+result=simdi-dogum
+
+Yıl=result.days//365
+Ay=result.days%365//30
+Gün=result.days%365%30
+
+print(f"{Yıl} yıl {Ay} ay {Gün} gündür hayattasınız")
+
+#basit şifre oluşturma kodu 
