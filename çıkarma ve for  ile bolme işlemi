@@ -1,0 +1,20 @@
+#for ve çıkarma işlemi ile bölme işlemi
+#kalanı dahil etmediği için bize int değeri verecektir
+bolunen  = int(input("lütfen bölüneni gir "))
+#bolunenden boleni çıkaracağımız için son sonuc başlangıç değeri ile aynı olmayacaktır boluneni en son ekranda yazdırkmak için bolunen başka bir değere (b'ye )atadık
+b=bolunen
+bolen = int(input("lütfen böleni gir "))
+sayac=0
+while(bolunen>bolen):
+        bolunen= bolunen - bolen
+        sayac += 1
+if (bolunen==bolen):
+        #aşağıda sayac+1 uyapma nedeni kalan 0 olduğunda son dongüyü sayamaması (while >bolen dediğimiz için)
+        print("{} / {} = {}".format(b, bolen, sayac+1))
+        # kalanı yazdırmak için
+        #kalan bolene eşit olduğu için son kez çıkarma işlemini yapıyoruz 
+        print("kalan ",bolunen-bolen)
+else:
+        print("{} / {} = {}".format(b, bolen, sayac))
+        # kalanı yazdırmak için
+        print("kalan ",bolunen)
