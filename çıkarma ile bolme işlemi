@@ -1,4 +1,4 @@
-#for ve çıkarma işlemi ile bölme işlemi
+# çıkarma işlemi ile bölme işlemi
 #kalanı dahil etmediği için bize int değeri verecektir
 bolunen  = int(input("lütfen bölüneni gir "))
 #bolunenden boleni çıkaracağımız için son sonuc başlangıç değeri ile aynı olmayacaktır boluneni en son ekranda yazdırkmak için bolunen başka bir değere (b'ye )atadık
