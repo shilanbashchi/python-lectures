@@ -1,17 +1,59 @@
-islem=input("lütfen yapmak istedeğiniz işlemi yazınız [toplama] [cikarma] [bolme] [carpma]")
+islem=input("lütfen yapmak istedeğiniz işlemi yazınız [toplama] [cikarma] [bolme] [carpma] [mod] [basamakogren] [usalma] [faktoriyel]")
+#toplama işlemi
 if islem=="toplama":
     sayi1=int(input("1.sayıyı giriniz"))
     sayi2=int(input("2.sayıyı giriniz"))
     print(sayi1+sayi2)
+#bölme işlemi
 elif  islem == "bolme":
     sayi1 = int(input("1.sayıyı giriniz"))
     sayi2 = int(input("2.sayıyı giriniz"))
     print(sayi1 /sayi2)
+#çıkarma işlemi
 elif islem == "cikarma":
     sayi1 = float(input("1.sayıyı giriniz"))
     sayi2 = float(input("2.sayıyı giriniz"))
     print(sayi1 - sayi2)
+#çarpma işlemi
 elif islem == "carpma":
     sayi1 = int(input("1.sayıyı giriniz"))
     sayi2 = int(input("2.sayıyı giriniz"))
     print(sayi1 *sayi2)
+#sayının modunu alma
+elif islem=="mod":
+    sayi1 = int(input("lütfen modu alınacak sayıyı gir"))
+    sayi2 = int(input("lütfen mod sayıyı gir"))
+    sonuc = 0
+    while (sayi1 >= sayi2):
+        sayi1 = sayi1 - sayi2
+        if(sayi1<sayi2):
+          print("mod =", sayi1)
+#basamak öğrenme
+elif islem=="basamakogren":
+ sayi1=int(input("lütfen  sayıyı gir"))
+ b = sayi1
+ sayac=1
+ while(sayi1>9):
+      sayi1= sayi1/10
+      sayac+=1
+ if(sayi1<9):#sonucu tek seferde yazdırmak için bu satırı ekledik yok döngü her döndüğünde sonucu yazdırırdı
+      print(b," sayısı  ",sayac,"basamaklıdır")
+#üsalma işlemi
+if islem=="usalma":
+      sayi=int(input("lütfen  üssü alınacak sayıyı giriniz"))
+      us=int(input("lütfen üssü  giriniz"))
+      sonuc=1
+      for i in range (us):
+        sonuc=sonuc*sayi
+        print (sonuc)
+#faktoriyel bulma işlemi
+if islem=="faktoriyel":
+       sayi1  = int(input("Lütfen Faktöriyelini Hesaplamak İstediğini Sayını Giriniz : "))
+       sonuc1 = 1
+       for i in range(1, sayi1 + 1):
+        sonuc1 = sonuc1 * i
+        print(sayi1, "sayısının faktöriyeli =", sonuc1)
+
+
+
+
