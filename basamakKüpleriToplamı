@@ -1,0 +1,12 @@
+#girilen 3 basamaklı sayıının basamaklarının küpleri toplamı kendisine eşit mi kontrol eden program
+basamak=0
+toplam =0
+sayi=int(input("sayı gir"))
+basamak=sayi%10
+toplam=toplam+(basamak*basamak*basamak)
+if (sayi<10):
+      toplam=toplam+(sayi*sayi*sayi)
+elif(toplam==sayi):
+      print(sayi,"sayısının basamak küpleri kendisine eşittir")
+else:
+      print("eşit değil ")
