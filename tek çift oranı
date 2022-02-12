@@ -1,0 +1,23 @@
+#girilen sayıların tek mi çift mi bakan ve oranlarını hesaplayan program (çift/tek)
+
+tek = 0
+cift= 0
+oran=0
+
+
+for sayac in range(5):
+    sayi = int(input("Bir sayı girin:"))
+
+
+    if sayi % 2 == 1|sayi==1:
+        tek += sayi
+
+    elif(sayi%2==0):
+     cift += sayi
+print(f"Girilen Çift Sayıların Toplamı:{cift}")
+print(f"Girilen Tek Sayıların Toplamı:{tek}")
+oran = cift / tek
+print(f"Girilen Tek Sayıların oranı:{oran}")
+
+
+    
