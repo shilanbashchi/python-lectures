@@ -1,0 +1,13 @@
+# mükemmel sayı sorusu eğer sayısın bölenleri toplamı sayıya eşitse bu mükemmmel sayı oluyor
+
+toplam = 0
+sayi = int(input("lütfen sayyıyı gir "))
+for i in range(1, sayi):
+    if (sayi % i == 0):
+        toplam += i
+
+if (sayi == toplam):
+    print(sayi, "sayısı mükemmel sayıdır ")
+else:
+    print(sayi, "bu sayı mükemmel değildir ")
+
