@@ -1,0 +1,60 @@
+#1 den N. sayıya kadar olan sayıların toplamı 1 2  3.... N
+print("shilanbashchi")
+sayi1=int(input("lütfen sayı  girin "))
+def terimlertoplami(sayi):
+  for i in range(1,sayi+1):
+     print(i)
+     sonuc=(sayi*(sayi+1))/2
+  print("sayılar toplamı eşittir ",sonuc)
+
+#0 dan n sayıya kadar olan çift sayıların terim sayısı ve toplamı
+def ciftterimlertoplamı(sayi):
+    sayac=0
+    sayison=sayi
+
+    if(sayi%2==1):
+      for i in range(0,sayi-1):
+       while(sayac<=sayi):
+        print(sayac)
+        sayac+= 2
+      terimsayısı = (((sayison-1) - 0) / 2) + 1
+      toplam = (terimsayısı / 2) * ((sayison - 0)-1)
+      print("çift terim  sayısı tek=", terimsayısı)
+      print("çift toplam   sayısı tek=", toplam)
+    else:
+     for i in range(1, sayi ):
+      while(sayac<sayi):
+       sayac += 2
+       print(sayac)
+    terimsayısı = ((sayison-0)/2)+1
+    toplam=(terimsayısı/2)*(sayison-0)
+    print("çift terim  sayısı =", terimsayısı)
+    print("çift toplam   sayısı =", toplam)
+#0 dan N e kadar olan sayıların toplamı ve terim sayısı 
+def tekterimlertoplamı(sayi):
+    sayac=1
+    sayison=sayi
+
+    if(sayi%2==1):
+      for i in range(0,sayi):
+       while(sayac<=sayi):
+        print(sayac)
+        sayac+= 2
+      terimsayısı = (((sayison) - 0) / 2) + 1
+      toplam = (terimsayısı / 2) * ((sayison - 0))
+      print("tek terim  sayısı tek=", terimsayısı)
+      print("tek toplam   sayısı tek=", toplam)
+    else:
+     for i in range(1, sayi ):
+      while(sayac<sayi):
+       sayac += 2
+       print(sayac)
+    terimsayısı = (((sayison-0)-1)/2)+1
+    toplam=(terimsayısı/2)*((sayison-0)-1)
+    print("tek terim  sayısı =", terimsayısı)
+    print("tek toplam   sayısı =", toplam)
+    
+    
+print(tekterimlertoplamı(sayi1))
+print(terimlertoplami(sayi1))
+print(ciftterimlertoplamı(sayi1))
