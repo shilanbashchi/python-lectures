@@ -1,0 +1,20 @@
+#1 ile  64 arasında tutulan rastgele sayıyı tahmin etme sorusu 
+import random
+print("shilanbashchi")
+tutulan = random.randint(1, 64)
+sayac = 0
+while True:
+    sayac += 1
+    tahmin = int(input("1 ile 64 arasında sayı girin :"))
+    if (tahmin == 0):
+        print("geçersiz sayı girişi ")
+        break
+    elif tahmin < tutulan:
+        print("Daha Yüksek Bir Sayı Girin.")
+        continue
+    elif tahmin > tutulan:
+        print("Daha Düşük Bir Sayı Girin.")
+        continue
+    else:
+        print("TUTULAN SAYI :{0}".format(tutulan))
+        print(" DOĞRU CEVABI {0}".format(sayac),"DEFA TAHMİN EDEREK  BULDUNUZ ")
