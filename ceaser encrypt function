@@ -1,0 +1,16 @@
+print("hola, yo soy shilanbashci")
+shift2 = int(input("lütfen şifreleme yönteminde harf sırasını  kaç defa kaydırmak isteğinizi giriniz (1/29 arası)"))
+text = input("lütfen şifrelemek istedğiniz mesajı girin ")
+
+def caesar(shift,message):
+    enc_message=""
+    shift
+    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
+                'o', 'p', 'r', 's', 't', 'u', 'v', 'y', 'z']
+
+
+    for i in message:
+        enc_message += alphabet[(alphabet.index(i) + shift) % len(alphabet)]
+    return enc_message
+
+print("mesage: ",caesar(shift2,text))
