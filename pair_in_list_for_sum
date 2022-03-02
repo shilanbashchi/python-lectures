@@ -1,0 +1,17 @@
+#verilen listede olan sayıların toplamının verilen x sayısına eşit olup olmadığını gösteren function 
+print("hola, yo soy shilanbashci")
+#bizden istenilen argümanalar "dizi"  dizisi ve x sayısı (dizide var olan ikili int değerinin toplamının x e eşit oplup olmadığına bakacağız)
+def find_ikili(flist,x):
+  ikili=[] #ikili diye bir dizi tanımlayıp içine x eşit olan ikilileri atayacağız
+
+
+  #iç içe iki adet for döngüsü ile listeyi iki defa tarayacağız
+  for (i,sayi1) in enumerate(flist) : #i den sayi1 e kadar olan sayıları flist sonunna kadar tara
+       for( j , sayi2) in  enumerate(flist[i+1:]):#j den sayi2 ye kadar olan sayıları atadığın   i değerinden  1 değer sonra (flist([i+1:]) ifadesi bu demek) başlat
+           if ( sayi1 + sayi2 == x ):#eğer seçtiğin ikili değerler x e eşitse append komutu ile listenin sonuna ekle
+              ikili.append((sayi1,sayi2))
+  return ikili #en sonunda ikili adlı listeyi döndür
+b=range(20) #0 dan 19 a  kadar bir liste tanımladım
+for i in b: #b listesinin içindeki elemanları rahatça görebilmek için print(i) ile yazdırdım
+ print(i)
+print(find_ikili(b,25)) # toplamı 25 eden b listesindeki elemanları yazdır
