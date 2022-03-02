@@ -14,4 +14,4 @@ def find_ikili(flist,x):
 b=range(20) #0 dan 19 a  kadar bir liste tanımladım
 for i in b: #b listesinin içindeki elemanları rahatça görebilmek için print(i) ile yazdırdım
  print(i)
-print(find_ikili(b,25)) # toplamı 25 eden b listesindeki elemanları yazdır
+print(find_ikili(b,25)) # toplamı 25 eden b listesindeki ikilileri yazdır
