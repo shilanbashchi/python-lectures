@@ -1,0 +1,15 @@
+#shilanbashci
+import pytesseract
+from cv2 import cv2
+
+myimg_path = "C:\\Users\\Lenovo\\Downloads\\kimlik.jpg"
+
+pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
+
+myimg = cv2.imread(myimg_path)
+
+img_text = pytesseract.image_to_string(myimg,lang="tur")
+
+print(img_text)
+
+cv2.waitKey(0)
