@@ -1,15 +1,20 @@
 #shilanbashci
 import pytesseract
 from cv2 import cv2
-
+#texti çekeceğimiz resmin pathi
 myimg_path = "C:\\Users\\Lenovo\\Downloads\\kimlik.jpg"
 
+#pytesseract indirdikten sonra alt satırdaki gibi pathi belirtmeyi unutmayın 
 pytesseract.pytesseract.tesseract_cmd = "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"
 
+#resmi cv2 ile path den alarak oku
 myimg = cv2.imread(myimg_path)
 
+#pyteseseract kütüphanesi ile resimdeki yazıyı getir 
 img_text = pytesseract.image_to_string(myimg,lang="tur")
 
+#yazıyı console a yazdır 
 print(img_text)
+
 
 cv2.waitKey(0)
